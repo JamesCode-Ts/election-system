@@ -4,7 +4,7 @@ Java RESTful APIs criadas para o Desafio de projeto na DIO.
 
 ## Principais Tecnologias
  - **Java 17**: Utilizei a versão LTS do Java para tirar vantagem das últimas inovações que essa linguagem robusta e amplamente utilizada oferece;
- - **Quarkus**: Trabalhei com a mais nova versão do Spring Boot, que maximiza a produtividade do desenvolvedor por meio de sua poderosa premissa de autoconfiguração;
+ - **Quarkus**: Trabalhei com Quarkus, um framework Java para microsserviços e aplicações nativas da nuvem, conhecido por sua leveza e eficiência.Destaco sua capacidade de compilar aplicações Java em binários nativos para inicialização rápida e baixo consumo de memória.
  - **OpenAPI (Swagger)**: Foi criado uma documentação de API eficaz e fácil de entender usando a OpenAPI (Swagger), perfeitamente alinhada com a alta produtividade que o Quarkus oferece;
 
 
