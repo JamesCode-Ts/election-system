@@ -24,7 +24,7 @@ Para usar este projeto, siga estas etapas:
 1. Clone este repositório para o seu computador:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/JamesCode-Ts/election-system.git
 ```
 
 2. Configuração do Ambiente Java com SDKMAN!
