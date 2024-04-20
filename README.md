@@ -53,8 +53,19 @@ rue}' http://logging.private.dio.localhost/api/system/inputs
 
 docker-compose up -d caching database
 ```
+5. JVM Build e construção do Quarkus a seguir:
 
-
+```bash
+./mvnw package
+```
+6. Construir a Imagem Docker
+```bash
+docker build -f src/main/docker/Dockerfile.jvm -t election-system/election-management .
+```
+8. Executar o Script de Build CI/CD
+```bash
+cicd-build.sh
+```
 
 
 
