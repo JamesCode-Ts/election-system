@@ -34,12 +34,15 @@ curl -s "https://get.sdkman.io" | bash
 sdk install java 17.0.6-tem
 sdk use java 17.0.6-tem
 ```
-
-3. Configuração do Quarkus
+3. Instalação do maven
+```bash
+sdk install maven 
+```
+4. Configuração do Quarkus
 ```bash
 sdk install quarkus 2.16.4.Final
 ```
-4. Configuração do Docker Compose
+5. Configuração do Docker Compose
 ```bash
 docker-compose -f docker-compose.yml -f common.yml up -d reverse-proxy jaeger mongodb opensearch graylog
 
@@ -53,12 +56,12 @@ rue}' http://logging.private.dio.localhost/api/system/inputs
 
 docker-compose up -d caching database
 ```
-5. JVM Build e construção do Quarkus a seguir:
+6. JVM Build e construção do Quarkus a seguir:
 
 ```bash
 ./mvnw package
 ```
-6. Construir a Imagem Docker
+7. Construir a Imagem Docker
 ```bash
 docker build -f src/main/docker/Dockerfile.jvm -t election-system/election-management .
 ```
