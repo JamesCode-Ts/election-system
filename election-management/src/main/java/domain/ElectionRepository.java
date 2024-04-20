@@ -6,4 +6,8 @@ public interface ElectionRepository {
     void submit(Election election);
 
     List<Election> findAll();
+
+    default void delete(String id) {
+    }
+
 }

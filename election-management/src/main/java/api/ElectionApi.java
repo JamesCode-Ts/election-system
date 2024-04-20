@@ -25,4 +25,5 @@ public class ElectionApi {
                       .map(Election::fromDomain)
                       .toList();
     }
+    public void delete(String id){ service.delete(id);}
 }

@@ -73,4 +73,14 @@ public class SQLElectionRepository implements ElectionRepository {
                 .map(entry -> ElectionCandidate.fromDomain(election, entry.getKey(), entry.getValue()))
                 .forEach(entityManager::merge);
     }
+
+
+    @Override
+    @Transactional
+    public void delete(String id) {
+        var election = entityManager.find(infrastructure.repositories.entities.Election.class, id);
+        if (election != null) {
+            entityManager.remove(election);
+        }
+    }
 }

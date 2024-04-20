@@ -29,4 +29,6 @@ public class ElectionService {
         Election election = Election.create(candidateService.findAll());
         repositories.forEach(repository -> repository.submit(election));
     }
+
+    public void delete(String id){ repository.delete(id);}
 }
