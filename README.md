@@ -14,3 +14,49 @@ Java RESTful APIs criadas para o Desafio de projeto na DIO.
 ## 📚 Sobre o Projeto
 
 O projeto é um  sistema distribuído e escalável para eleições, contendo aplicações responsáveis para votação, gerenciamento de eleição, e consulta de resultados utilizando Java, Docker, MongoDB e Quarkus.
+
+
+
+## Modo de Uso
+
+Para usar este projeto, siga estas etapas:
+
+1. Clone este repositório para o seu computador:
+
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+```
+
+2. Configuração do Ambiente Java com SDKMAN!
+
+```bash
+curl -s "https://get.sdkman.io" | bash
+sdk install java 17.0.6-tem
+sdk use java 17.0.6-tem
+```
+
+3. Configuração do Quarkus
+```bash
+sdk install quarkus 2.16.4.Final
+```
+4. Configuração do Docker Compose
+```bash
+docker-compose -f docker-compose.yml -f common.yml up -d reverse-proxy jaeger mongodb opensearch graylog
+
+curl -H "Content-Type: application/json" \
+-H "Authorization: Basic YWRtaW46YWRtaW4=" \
+-H "X-Requested-By: curl" \
+-X POST -v -d '{"title":"udp
+input","configuration":{"recv_buffer_size":262144,"bind_address":"0.0.0.0","port":12201,"de
+compress_size_limit":8388608},"type":"org.graylog2.inputs.gelf.udp.GELFUDPInput","global":t
+rue}' http://logging.private.dio.localhost/api/system/inputs
+
+docker-compose up -d caching database
+```
+
+
+
+
+
+
+
