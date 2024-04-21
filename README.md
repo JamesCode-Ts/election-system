@@ -15,7 +15,7 @@ Java RESTful APIs criadas para o Desafio de projeto na DIO.
 
 O projeto é um  sistema distribuído e escalável para eleições, contendo aplicações responsáveis para votação, gerenciamento de eleição, e consulta de resultados utilizando Java, Docker, MongoDB e Quarkus.
 
-
+ - [README in English](README-en.md)
 
 ## Modo de Uso
 
